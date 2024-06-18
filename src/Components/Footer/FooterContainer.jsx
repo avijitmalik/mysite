@@ -12,4 +12,5 @@ const FooterContainer = () => {
   );
 };
 
+
 export default FooterContainer;

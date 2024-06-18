@@ -20,12 +20,12 @@ function ContactContainer() {
     <div className='w-full px-10 pb-20 bg-gray-100'>
       <div className='pt-8 flex flex-col'>
         <h1 className='capitalize font-2xl'>interested in working together ?</h1>
-        <div className='flex gap-2 mt-8 justify-between'>
+        <div className='flex flex-wrap gap-2 mt-8 justify-between'>
           { 
             contactList.map((item, i) =>(
-              <div key={i} className='flex flex-col border gap-2 rounded-md p-3 bg-white'>
+              <div key={i} className='flex flex-col border gap-4 rounded-md p-3 bg-white'>
                 <h2 className='capitalize font-sans text-3xl'>{item.title}</h2>
-                <p className='capitalize font-sans text-2xl'>{item.desc}</p>
+                <p className='capitalize font-sans text-xl lg:text-2xl'>{item.desc}</p>
                 <div>
                   <button className='mt-auto capitalize text-start bg-black text-white py-2 px-4 rounded border border-black hover:bg-gray-900'>
                     {item.buttonDesc}

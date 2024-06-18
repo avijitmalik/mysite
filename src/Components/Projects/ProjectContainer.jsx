@@ -49,12 +49,14 @@ const ProjectContainer = () => {
                 </div> 
             </div>
             {/* project model showcase  */}
-            <div className='mt-9 flex items-centers justify-between gap-6'>
+            <div className='mt-9 flex flex-wrap items-centers justify-between gap-6 lg:flex-nowrap'>
                {
                  projectList.map((item, i)=>(
-                    <div key={i} className='border border-customGrayBorder p-2 rounded-md text-white bg-customGrayBg'>                        
-                         <div className='p-1 rounded-md border border-customGrayBorder bg-customGrayBg inline-block'>
-                            {item.icon}
+                    <div key={i} className='flex flex-col border border-customGrayBorder p-2  text-white bg-customGrayBg rounded-md'>                        
+                        <div className='p-1 bg-customGrayBg rounded-md'>
+                            <div className='border border-customGrayBorder inline-block p-2 rounded-md'>
+                                {item.icon}
+                            </div>
                         </div>
                         <h2 className='capitalize font-sans text-2xl'>{item.title}</h2>
                         <p className='pt-4 capitalize'>{item.projectDesc}</p>
